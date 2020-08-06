@@ -1,4 +1,4 @@
-# 学习SOFA的“快速开始”
+# 学习SOFA的“快速”开始
 原地址：  
 https://www.sofastack.tech/  
 https://github.com/sofastack-guides/kc-sofastack-demo.git  
