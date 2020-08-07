@@ -33,10 +33,10 @@
         </dependency>
 
         <!--SOFARegistry 依赖-->
-        <!--dependency>
+        <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>registry-client-all</artifactId>
-        </dependency-->
+        </dependency>
 
         <!--runtime 依赖-->
         <dependency>
