@@ -1,0 +1,433 @@
+{
+	"info": {
+		"_postman_id": "bf4257bf-527e-422c-86c5-64bfd0e7e290",
+		"name": "SofaRegister20200807",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "H01-查看meta角色的健康检测接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://47.101.186.210:9615/health/check",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9615",
+					"path": [
+						"health",
+						"check"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "H02-查看data角色的健康检测接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://47.101.186.210:9622/health/check",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9622",
+					"path": [
+						"health",
+						"check"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "H03-查看session角色的健康检测接口",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://47.101.186.210:9603/health/check",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9603",
+					"path": [
+						"health",
+						"check"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "A01-打开推送",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://47.101.186.210:9615/stopPushDataSwitch/close",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9615",
+					"path": [
+						"stopPushDataSwitch",
+						"close"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "A02-关闭推送",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://47.101.186.210:9615/stopPushDataSwitch/open",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9615",
+					"path": [
+						"stopPushDataSwitch",
+						"open"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "B01-查看meta集群的地址列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://47.101.186.210:9615/digest/META/node/query",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9615",
+					"path": [
+						"digest",
+						"META",
+						"node",
+						"query"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "B02-查看data集群的地址列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://47.101.186.210:9615/digest/DATA/node/query",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9615",
+					"path": [
+						"digest",
+						"DATA",
+						"node",
+						"query"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "B03-查看session集群的地址列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://47.101.186.210:9615/digest/SESSION/node/query",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9615",
+					"path": [
+						"digest",
+						"SESSION",
+						"node",
+						"query"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "C01-RegisterData查看pub数量",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://47.101.186.210:9622/digest/datum/count",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9622",
+					"path": [
+						"digest",
+						"datum",
+						"count"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "C02-RegisterData根据客户端的ip&port查询其发布的数据",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"127.0.0.1\": 9622\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://47.101.186.210:9622/digest/connect/query",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9622",
+					"path": [
+						"digest",
+						"connect",
+						"query"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "D01-RegistrySession根据客户端的ip&port查询其发布的数据",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"localhost:8080\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://47.101.186.210:9603/digest/pub/connect/query",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9603",
+					"path": [
+						"digest",
+						"pub",
+						"connect",
+						"query"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "D02-RegistrySession根据客户端的ip&port查询其订阅的数据",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"172.19.57.68:22200\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://47.101.186.210:9603/digest/sub/connect/query",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9603",
+					"path": [
+						"digest",
+						"sub",
+						"connect",
+						"query"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "E01-断开客户端链接",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"connectIds\": [\r\n        \"172.19.57.68:22200\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://47.101.186.210:9603/api/clients/off",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "9603",
+					"path": [
+						"api",
+						"clients",
+						"off"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		},
+		{
+			"name": "Z01-TEST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\": \"76582754-10e4-4c10-89e9-45cc7eb9034d\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://47.101.186.210:8080/createUser",
+					"protocol": "http",
+					"host": [
+						"47",
+						"101",
+						"186",
+						"210"
+					],
+					"port": "8080",
+					"path": [
+						"createUser"
+					]
+				},
+				"description": "在注册中心新版本发布的过程中为了把对业务的影响减少到最小，避免服务端重启动引发大规模服务地址信息变更产生大量推送，我们提供运维层面暂时关闭推送的能力。在服务端完成发布后，可以打开推送恢复正常工作状态，在关闭期间的数据订阅和服务发布信息会再次进行全局推送进行补偿。"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
